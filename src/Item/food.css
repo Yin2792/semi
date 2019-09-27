@@ -1,0 +1,11 @@
+.food_row:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .food_col{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
