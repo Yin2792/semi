@@ -28,9 +28,7 @@ class FoodGallery extends Component {
     e.preventDefault();
     const id=value
     const lists_by_id_api =`http://restaurant.com:5005/category/lists?id=${id}`;
-   axios.get(lists_by_id_api,{
-     method:"get"
-   })
+    axios.get(lists_by_id_api)
    .then(data=>{this.setState({lists:data.data.data})})
   .catch((err)=>console.log(err))
   }
@@ -38,7 +36,7 @@ class FoodGallery extends Component {
     console.log(this.state.lists)
     return (
   
-      
+      <div className="container-fluid">
       <div className="row" style={{marginTop:'20px'}}>
         <div className="col-sm-4">
         <ul className="list-group">
@@ -70,7 +68,7 @@ class FoodGallery extends Component {
 
         </div>
       </div>
-    
+      </div>
      
     )
   }

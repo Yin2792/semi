@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Menu = () => {
     return (
+        <div className="container-fluid">
         <div className="row p-3">
             <div className="col-sm-6 col-lg-3 p-3">
                 <div className="card bg-light" style={{ borderTopLeftRadius: 20, borderBottomRightRadius: 20 }}>
@@ -88,6 +89,7 @@ const Menu = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

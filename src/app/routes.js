@@ -17,6 +17,8 @@ import Promotion from '../promotion/promotion';
 import ThisMonth from '../promotion/this_month';
 import ComingMonth from '../promotion/coming_month';
 import SingnUp from '../signup/signup';
+import Tables from '../tables/tables';
+import OrderMenu from '../tables/order_menu'
 const MainRoute = () => {
 
     return (
@@ -39,6 +41,8 @@ const MainRoute = () => {
                 <Route path='/promotion' component={Promotion} />
                 <Route path='/this_month' component={ThisMonth} />
                 <Route path='/coming_month' component={ComingMonth} />
+                <Route path='/tables' component={Tables}/>
+                <Route path='/ordermenu' component={OrderMenu}/>
                 <Redirect to='/Home' />
             </Switch>
 
